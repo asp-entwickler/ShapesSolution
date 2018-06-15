@@ -1,14 +1,25 @@
-﻿using System;
-using ShapesLib;
+﻿using ShapesLib;
+using System;
+using Unity;
 
 namespace ConsoleDialog
 {
 	class Program
 	{
+		private static IShapeFactory _shapeFactory;
+
 		static void Main(string[] args)
 		{
+			ResolveDependencies();
 			PrintGreetingHeader();
 			RunUserInteractionFlow();
+		}
+
+		private static void ResolveDependencies()
+		{
+			var container = new UnityContainer();
+			container.RegisterType<IShapeFactory, ShapeFactory>();
+			_shapeFactory = container.Resolve<IShapeFactory>();
 		}
 
 		private static void PrintGreetingHeader()
@@ -49,20 +60,22 @@ namespace ConsoleDialog
 
 			var userInputShapeWith = GetUserInputInt();
 
-			Shape s = new Shape(type, userInputShapeWith);
-
-			Console.WriteLine();
-			var area = s.CalculateArea();
-			if (area == -1)
+			Shape s;
+			try
 			{
-				Console.WriteLine("Unknown type of shape. ");
-			}
-			else
-			{
+				s = _shapeFactory.CreateShape(type, userInputShapeWith);
+				var area = s.CalculateArea();
 				Console.WriteLine("Shape properties:");
 				Console.WriteLine("\tWidth: " + s.Width);
 				Console.WriteLine("\tArea: " + area);
+
 			}
+			catch (Exception ex)
+			{
+				Console.WriteLine();
+				Console.WriteLine(ex.Message);
+			}
+
 		}
 
 		private static int GetUserInputInt()

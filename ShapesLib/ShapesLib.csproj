@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Shape - Copy.cs" />
-    <Compile Include="Shape.cs" />
+    <Compile Include="Factory\ShapeFactory.cs" />
+    <Compile Include="Shapes\Circle.cs" />
+    <Compile Include="Shapes\EquilateralTriangle.cs" />
+    <Compile Include="Factory\IShapeFactory.cs" />
+    <Compile Include="Shapes\Shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShapeTypeEnum.cs" />
+    <Compile Include="Shapes\Square.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
