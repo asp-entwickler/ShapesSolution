@@ -1,0 +1,36 @@
+CalCon Refactoring Description
+
+1. Identify the most offensive code "smells"
+Description:
+
+- Object oriented approach misuse
+
+- For a set of named constants better use Enum
+
+- "Property is a member that provides a flexible mechanism to read, write, or compute the value of a private field."
+  To avoid side effects better way to use property for private fields access and methods for additional logic.
+
+2. Identify potential problems that could be encountered in developing and/or maintaining a system that uses the code as it is written
+Description:
+
+- Functional extension could be difficult
+
+- Logging not implemented
+
+
+3. Describe why your refactored code would be better than the original code.
+
+- After the programm run and execute console window close immidiately, user can't see result. (ReadLine added)
+
+- User input should be validated
+
+- Throw exeption is not the best way to inform user that something wrong in application for number of reason.
+  Better way is provide meaningful description and exit application
+
+- For better user experience we can provide possibility calculate areas for number of shapes without programm restart
+
+
+
+
+
+

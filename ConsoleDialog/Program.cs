@@ -10,21 +10,9 @@ namespace ConsoleDialog
 
 		static void Main(string[] args)
 		{
-
 			ResolveDependencies();
 			PrintGreetingHeader();
-			
-
-			var shape1 = _shapeFactory.CreateShape((ShapeTypeEnum)1, 5);
-			var shape2 = _shapeFactory.CreateShape((ShapeTypeEnum)2, 5);
-			var shape3 = _shapeFactory.CreateShape((ShapeTypeEnum)3, 5);
-
-			Console.WriteLine("1: {0}", shape1.CalculateArea());
-			Console.WriteLine("2: {0}", shape2.CalculateArea());
-			Console.WriteLine("3: {0}", shape3.CalculateArea());
-
 			RunUserInteractionFlow();
-
 		}
 
 		private static void ResolveDependencies()
