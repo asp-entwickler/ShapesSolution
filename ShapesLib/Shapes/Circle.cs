@@ -2,7 +2,7 @@
 
 namespace ShapesLib
 {
-	class Circle : Shape
+	public class Circle : Shape
 	{
 
 		public Circle(double width) : base(width)

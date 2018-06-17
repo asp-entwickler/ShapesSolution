@@ -89,8 +89,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ShapesLib\FactoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="ShapesLib\ShapesFunctionTest.cs" />
+    <Compile Include="Storage\DBStorageTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -99,6 +102,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ShapesLib\ShapesLib.csproj">
+      <Project>{90cfd186-d913-42b8-a9cd-e2bd4e4d0c6d}</Project>
+      <Name>ShapesLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebShapes\WebShapes.csproj">
       <Project>{91DDFB39-A9D8-4373-A07F-A41E68905A1D}</Project>
       <Name>WebShapes</Name>

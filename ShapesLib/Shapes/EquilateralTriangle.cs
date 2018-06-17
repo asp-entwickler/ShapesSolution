@@ -2,7 +2,7 @@
 
 namespace ShapesLib
 {
-	class EquilateralTriangle : Shape
+	public class EquilateralTriangle : Shape
 	{
 		public EquilateralTriangle(double width) : base(width)
 		{

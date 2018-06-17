@@ -1,6 +1,6 @@
 ﻿namespace ShapesLib
 {
-	class Square : Shape
+	public class Square : Shape
 	{
 
 		public Square(double width) : base(width)

@@ -12,7 +12,7 @@ namespace WebShapes.DAL
 
 			string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
-			// TODO add try-catch
+			// TODO add try-catch and error handling
 			using (SqlConnection conn = new SqlConnection(connString))
 			{
 				conn.Open();
@@ -34,7 +34,7 @@ namespace WebShapes.DAL
 			string shapesCollectionString = "";
 			string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
-			// TODO add try-catch
+			// TODO add try-catch and error handling
 			using (SqlConnection conn = new SqlConnection(connString))
 			{
 
