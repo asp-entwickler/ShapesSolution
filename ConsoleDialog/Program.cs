@@ -68,12 +68,11 @@ namespace ConsoleDialog
 				Console.WriteLine("Shape properties:");
 				Console.WriteLine("\tWidth: " + s.Width);
 				Console.WriteLine("\tArea: " + area);
-
 			}
 			catch (Exception ex)
 			{
 				Console.WriteLine();
-				Console.WriteLine(ex.Message);
+				Console.WriteLine("Error: {0}", ex.Message);
 			}
 
 		}

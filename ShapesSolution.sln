@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesLib", "ShapesLib\Shap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDialog", "ConsoleDialog\ConsoleDialog.csproj", "{0409AE44-E95E-4506-A794-134785809617}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShapes", "WebShapes\WebShapes.csproj", "{91DDFB39-A9D8-4373-A07F-A41E68905A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Tests", "Shapes.Tests\Shapes.Tests.csproj", "{2695B5DC-268D-49ED-95E4-5976EF8D2E1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0409AE44-E95E-4506-A794-134785809617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0409AE44-E95E-4506-A794-134785809617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0409AE44-E95E-4506-A794-134785809617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DDFB39-A9D8-4373-A07F-A41E68905A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DDFB39-A9D8-4373-A07F-A41E68905A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DDFB39-A9D8-4373-A07F-A41E68905A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DDFB39-A9D8-4373-A07F-A41E68905A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2695B5DC-268D-49ED-95E4-5976EF8D2E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2695B5DC-268D-49ED-95E4-5976EF8D2E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2695B5DC-268D-49ED-95E4-5976EF8D2E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2695B5DC-268D-49ED-95E4-5976EF8D2E1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
