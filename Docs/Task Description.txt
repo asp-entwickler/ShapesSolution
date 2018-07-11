@@ -1,0 +1,165 @@
+----------------------- Problem----------------------------------------------
+
+Starting from the next classes
+
+ 
+
+class Shape
+
+{
+
+    private double width;
+
+ 
+
+    private int type;
+
+    private const int SQUARE = 1;
+
+    private const int CIRCLE = 2;
+
+    private const int EQUILATERAL_TRIANGLE = 3;
+
+ 
+
+    public Shape(int type, double width)
+
+    {
+
+        this.type = type;
+
+        this.width = width;
+
+    }
+
+ 
+
+    public double Width
+
+    {
+
+        get
+
+        {
+
+            return width;
+
+        }
+
+    }
+
+ 
+
+    public double Area
+
+    {
+
+        get
+
+        {
+
+            switch (type)
+
+            {
+
+                case SQUARE:
+
+                    return width * width;
+
+                case CIRCLE:
+
+                    return Math.PI * (width / 2) * (width / 2);
+
+                case EQUILATERAL_TRIANGLE:
+
+                    return (Math.Sqrt(4) / 3) * width * width;
+
+                default:
+
+                    throw new InvalidProgramException("Unknown shape type encountered: " + type);
+
+            }
+
+        }
+
+    }
+
+}             
+
+               
+
+class Program
+
+{
+
+    static void Main(string[] args)
+
+    {
+
+        Console.WriteLine("---------------------------------------------------------------------");
+
+        Console.WriteLine("Calcon Code Exercise");
+
+        Console.WriteLine();
+
+        Console.WriteLine("Calculates and prints information for a user-supplied shape and width");
+
+        Console.WriteLine("---------------------------------------------------------------------");
+
+ 
+
+ 
+
+        Console.WriteLine("Do you want a square (1), circle (2), or equilateral triangle (3): ");
+
+        int type = int.Parse(Console.ReadLine());
+
+ 
+
+        Console.WriteLine("Enter the shape's primary dimension (width, radius, or base): ");
+
+        double width = double.Parse(Console.ReadLine());
+
+ 
+
+        Shape s = new Shape(type, width);
+
+ 
+
+        Console.WriteLine();
+
+        Console.WriteLine("Shape properties:");
+
+        Console.WriteLine("\tWidth: " + s.Width);
+
+        Console.WriteLine("\tArea: " + s.Area);
+
+    }
+
+}
+
+Exercise 1 (30 min):
+
+- Identify the most offensive code "smells"
+
+- Identify potential problems that could be encountered in developing and/or maintaining a system that uses the code as it is written
+
+- Describe why your refactored code would be better than the original code.
+
+ 
+
+Exercise 2 (4h):
+
+- Convert the solution into an ASP.NET MVC application where a user is able to:
+
+·         register, and/or login
+
+·         add/remove multiple shapes with different areas
+
+·         the shapes should be persistent across logins(saved and loaded from database).
+
+               
+
+* Extra points will be awarded for TDD solutions.
+
+* Extra points will be awarded for graphical solutions.

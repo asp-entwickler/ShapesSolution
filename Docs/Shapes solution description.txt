@@ -1,41 +1,36 @@
 CalCon Refactoring Description
 
 1. Identify the most offensive code "smells"
+Description:
 
-1.1 Object oriented approach misuse
+- Object oriented approach misuse
 
-1.2 For a set of named constants better use Enum
+- For a set of named constants better use Enum
 
-1.3 Property misuse - "Property is a member that provides a flexible mechanism to read, write, or compute the value of a private field." MSDN
+- "Property is a member that provides a flexible mechanism to read, write, or compute the value of a private field."
   To avoid side effects better way to use property for private fields access and methods for additional logic.
 
-
 2. Identify potential problems that could be encountered in developing and/or maintaining a system that uses the code as it is written
+Description:
 
-2.1 Functional extension could be difficult
+- Functional extension could be difficult
 
-2.2 Logging not implemented
+- Logging not implemented
 
 
 3. Describe why your refactored code would be better than the original code.
 
-3.1 Shapes class hierarchy added for application extension simplification (solution extension)
+- After the programm run and execute console window close immidiately, user can't see result. (ReadLine added)
 
-3.2 Shapes factory added for dependency decoupling
+- User input should be validated
 
-Use cases improvement
-
-3.3 After the programm run and execute console window close immidiately, user can't see result. (ReadLine added)
-
-3.4 User input should be validated
-
-3.5 Throw exeption is not the best way to inform user that something wrong in application for number of reason.
+- Throw exeption is not the best way to inform user that something wrong in application for number of reason.
   Better way is provide meaningful description and exit application
 
-3.6 For better user experience we can provide possibility calculate areas for number of shapes without programm restart
+- For better user experience we can provide possibility calculate areas for number of shapes without programm restart
 
-TODO Recomendation
 
-- Error handling
-- Logging
+
+
+
 
