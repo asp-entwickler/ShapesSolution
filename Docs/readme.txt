@@ -1,4 +1,4 @@
-Coding tast as it was reveived are in 'Task Description' file.
+Coding Task as it was reveived are in 'Task Description' file.
 
 Task reveived
 13/07/2018
